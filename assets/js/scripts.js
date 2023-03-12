@@ -243,15 +243,35 @@ $(document).ready(function () {
 function initMap() {
     var location = {lat: -8.8401714, lng: 115.1181037};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
+        zoom: 12,
         center: location,
         scrollwheel: false
     });
 
     var marker = new google.maps.Marker({
         position: location,
+        icon: 'assets/img/gmm/blue_markerA.png',
         map: map
     });
+
+     
+    var location2 = {lat: -8.8161357, lng: 115.2009856};
+    var marker2 = new google.maps.Marker({
+        position: location2,
+        icon: 'assets/img/gmm/blue_markerB.png',
+        map: map
+    });
+
+    var location3 = {lat: -8.7898252, lng: 115.1354307};
+    var marker3 = new google.maps.Marker({
+        position: location3,
+        icon: 'assets/img/gmm/blue_markerC.png',
+        map: map
+    });
+
+        
+
+    
 }
 
 function initBBSRMap() {
